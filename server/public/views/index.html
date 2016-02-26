@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <!-- Angular -->
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="/scripts/ang_app.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/dogController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/catController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/birdController.js"></script>
+</head>
+<body>
+
+    <header ng-include="'/views/templates/header.html'"></header>
+    <div ng-include="'/views/templates/nav.html'"></div>
+
+    <main ng-view></main>
+
+</body>
+</html>
